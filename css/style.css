@@ -238,7 +238,6 @@ body, html {
 /* Контентная часть */
 .content {
   flex: 1 0 auto;
-  height: 200vh;
 }
 
 /* Футер */
@@ -366,7 +365,7 @@ body, html {
     height: 60px;
   }
   .header__logo {
-    margin: 0 0 0 -35px;
+    margin: 0 0 0 -40px;
   }
   .header__menu {
     top: -70px;
