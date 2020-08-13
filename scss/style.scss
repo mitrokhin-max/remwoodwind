@@ -1,0 +1,184 @@
+/* Обнуление стилей */
+@import 'null';
+/* Ограничивающий контейнер */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* Основная оболочка сайта */
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Подключение шрифтов */
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body, html {font-family: 'Nunito', sans-serif;}
+/* Переменные */
+$color_main: #2f78ff;
+$color_second: rgb(23, 10, 134);
+$color_title: #000;
+$color_text: #81858e;
+$fz_title: 26px;
+$fz_text: 18px;
+
+/* Шапка */
+.header {
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+
+		&__container {
+		}
+
+		&__row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+		}
+
+		&__logo {
+            position: relative;
+            z-index: 2;
+            flex: 0 1 120px;
+                img {
+                    max-width: 100%;
+                }
+		}
+
+		&__menu {
+		}
+
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 2;
+		}
+
+		&__link {
+            margin: 7.5px 0px 7.5px 0px;
+            flex: 0 1 25%;            
+            text-align: center;
+                a {
+                    position: relative;
+                    color: $color_text;
+                    font-size: $fz_text;
+                    white-space: nowrap;
+                    padding: 0 0 5px 0;
+                        &:hover {
+                            color: $color_main;
+                        }
+                        &::before, &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            width: 0;
+                            height: 3px;
+                            background-color: $color_main;
+                            transition: 500ms;
+                        }
+                        &::before {
+                            left: 50%;
+                        }
+                        &::after {
+                            right: 50%;
+                        }
+                        &:hover::before, &:hover::after {
+                            width: 50%;
+                        }
+                }
+                
+
+
+		}
+
+		&__contacts {
+            position: relative;
+            z-index: 2;
+		}
+
+        &__roster {
+        }
+
+		&__tel {
+            margin: 0px 0px 5px 0px;
+
+                a {
+                    text-align: center;
+                    display: block;
+                    background-color: $color_main;
+                    border: 2px solid $color_main;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: $fz_text;
+                    transition: 300ms;
+                    white-space: nowrap;
+                        &:hover {
+                            background-color: #fff;
+                            color: $color_main;
+                        }
+                }
+        }
+        
+        &__tel-img {
+            display: none;
+        }
+
+		&__email {
+            
+            a {
+                text-align: center;
+                display: block;
+                background-color: $color_second;
+                border: 2px solid $color_second;
+                border-radius: 10px;
+                padding: 10px;
+                color: #fff;
+                font-size: $fz_text;
+                transition: 300ms;
+                    &:hover {
+                        background-color: #fff;
+                        color: $color_second;
+                    }
+            }
+		}
+
+        &__email-img {
+            display: none;
+        }
+
+		&__burger {
+            display: none;
+		}
+}
+
+/* Контентная часть */
+.content {
+    flex: 1 0 auto;
+    height: 200vh;
+}
+
+/* Футер */
+.footer {
+}
+
+
+/* Адаптив */
+@import 'media';
