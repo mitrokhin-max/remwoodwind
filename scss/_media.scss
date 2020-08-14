@@ -21,13 +21,19 @@
 }
 
 /* Адаптив */
-@media (max-width: 1199.99px) {
+@media (max-width: 1199.98px) {
+    .aboutus {
+        &__feedback {
+            padding: 30px 50px;
+        }
+    }
 }
 
-@media (max-width: 991.99px) {
+@media (max-width: 991.98px) {
     // Переменные
     $fz_contacts_992: 16px;
-    $fz_subtitle_992: 24px;
+    $fz_subtitle_992: 22px;
+    $fz_text_992: 16px;
 
     .header {
 
@@ -134,10 +140,11 @@
     .aboutus {
         &__column {
             &_1 {
-                flex: 0 1 50%;
+                flex: 0 1 60%;
             }
             &_2 {
-                flex: 0 1 50%;
+                flex: 0 1 40%;
+                border-radius: 10px;
             }
         }
 
@@ -148,16 +155,34 @@
         &__subtitle {
             font-size: $fz_subtitle_992;
         }
+
+        &__card {
+            padding: 20px;
+        }
+
+        &__feedback {
+            padding: 15px 20px;
+        }
     }
 
     .feedback {
-        &__point {
-            
+        &__title {
+            font-size: $fz_subtitle_992;
+        }
+
+        &__field {
+            input {
+                font-size: $fz_text_992;
+            }
+        }
+
+        &__button {
+            font-size: $fz_text_992;
         }
     }
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767.98px) {
     // Переменные
     $fz_text_768: 14px;
 
@@ -185,22 +210,31 @@
     }
 
     .aboutus {
-        padding: 0 0 20px 0;
+        padding: 30px 0 20px 0;
         &__row {
             flex-wrap: wrap;
         }
         &__column {
             &_1 {
                 flex: 0 1 100%;
+                margin: 0px 0px 10px 0px;
             }
             &_2 {
                 flex: 0 1 100%;
                 border-radius: 10px;
             }
         }
+
+        &__card {
+            padding: 0px;
+        }
+
+        &__feedback {
+            padding: 30px 50px;
+        }
     }
 }
-@media (max-width: 575.99px) {
+@media (max-width: 575.98px) {
     // Переменные
     $fz_text_576: 12px;
 
@@ -273,7 +307,7 @@
 
     .aboutus {
         &__feedback {
-            padding: 15px;
+            padding: 20px 25px;
         }
     }
 }

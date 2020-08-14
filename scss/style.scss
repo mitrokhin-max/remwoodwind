@@ -17,7 +17,7 @@
 body, html {font-family: 'Nunito', sans-serif;}
 /* Переменные */
 $color_main: #2f78ff;
-$color_second: rgb(23, 10, 134);
+$color_second: rgb(33, 16, 190);
 $color_title: #000;
 $color_text: #81858e;
 $fz_title: 30px;
@@ -187,6 +187,7 @@ $bgc_1: rgb(184, 184, 184);
 
         &__row {
             display: flex;
+            align-items: center;
         }
 
         &__column {
@@ -220,71 +221,69 @@ $bgc_1: rgb(184, 184, 184);
         }
 
         &__feedback {
-            padding: 30px;
+            padding: 30px 70px;
         }
 }
 
 .feedback {
+    
+        &__title {
+            font-size: $fz_subtitle;
+            color: #fff;
+            margin: 0px 0px 20px 0px;
+        }
 
-    &__title {
-        font-size: $fz_subtitle;
-        color: #fff;
-        margin: 0px 0px 20px 0px;
-    }
+        &__form {
+            border-radius: 10px;
+        }
 
-    &__form {
-        border: 2px solid $color_second;
-        border-radius: 10px;
-        padding: 20px;
-    }
+        &__point {
+            margin: 0px 0px 15px 0px;
+        }
 
-    &__point {
-        margin: 0px 0px 15px 0px;
-    }
+        &__field {
+                input, textarea {
+                    border-radius: 25px;
+                    padding: 5px 15px;
+                    font-size: $fz_text;
+                    color: $color_text;
+                    width: 100%;
+                    height: 40px;
+                }
+                textarea {
+                    resize: none;
+                    border-radius: 10px;
+                }
+        }
 
-    &__question {
-        font-size: $fz_text;
-        color: #fff;
-        margin: 0px 0px 7px 0px;
-    }
-
-    &__field {
-            input, textarea {
-                border-radius: 5px;
-                padding: 5px 15px;
-                font-size: $fz_text;
-                color: $color_text;
-                width: 100%;
-                border: 2px solid $color_second;
+        &__privicy {
+            font-size: 14px;
+            margin: 30px 0px 10px 0px;
+            color: #fff;
+            a{
+                color: #fff;
             }
-            textarea {
-                resize: none;
-            }
-    }
+        }
 
-    &__privicy {
-        margin: 0px 0px 10px 0px;
-    }
+        &__checkbox {
+        }
 
-    &__checkbox {
-    }
+        &__send {
+        }
 
-    &__send {
-    }
-
-    &__button {
-        padding: 10px;
-        border-radius: 10px;
-        background-color: $color_second;
-        color: #fff;
-        font-size: $fz_text;
-        box-shadow: 0px 3px 0px #000;
-        transition: 300ms;
-            &:hover {
-                box-shadow: 0px 0px 0px #000;
-                transform: translateY(3px);
-            }
-    }
+        &__button {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: $color_second;
+            color: #fff;
+            font-size: $fz_text;
+            box-shadow: 0px 3px 0px rgb(39, 16, 119);
+            transition: 300ms;
+                &:hover {
+                    box-shadow: 0px 0px 0px #000;
+                    transform: translateY(3px);
+                }
+        }
 }
 
 

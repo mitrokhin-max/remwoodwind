@@ -217,8 +217,8 @@ body, html {
 .header__email a {
   text-align: center;
   display: block;
-  background-color: #170a86;
-  border: 2px solid #170a86;
+  background-color: #2110be;
+  border: 2px solid #2110be;
   border-radius: 10px;
   padding: 10px;
   color: #fff;
@@ -228,7 +228,7 @@ body, html {
 
 .header__email a:hover {
   background-color: #fff;
-  color: #170a86;
+  color: #2110be;
 }
 
 .header__email-img {
@@ -253,6 +253,7 @@ body, html {
 
 .aboutus__row {
   display: flex;
+  align-items: center;
 }
 
 .aboutus__column_1 {
@@ -285,7 +286,7 @@ body, html {
 }
 
 .aboutus__feedback {
-  padding: 30px;
+  padding: 30px 70px;
 }
 
 .feedback__title {
@@ -295,45 +296,44 @@ body, html {
 }
 
 .feedback__form {
-  border: 2px solid #170a86;
   border-radius: 10px;
-  padding: 20px;
 }
 
 .feedback__point {
   margin: 0px 0px 15px 0px;
 }
 
-.feedback__question {
-  font-size: 18px;
-  color: #fff;
-  margin: 0px 0px 7px 0px;
-}
-
 .feedback__field input, .feedback__field textarea {
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 5px 15px;
   font-size: 18px;
   color: #81858e;
   width: 100%;
-  border: 2px solid #170a86;
+  height: 40px;
 }
 
 .feedback__field textarea {
   resize: none;
+  border-radius: 10px;
 }
 
 .feedback__privicy {
-  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+  margin: 30px 0px 10px 0px;
+  color: #fff;
+}
+
+.feedback__privicy a {
+  color: #fff;
 }
 
 .feedback__button {
   padding: 10px;
   border-radius: 10px;
-  background-color: #170a86;
+  background-color: #2110be;
   color: #fff;
   font-size: 18px;
-  box-shadow: 0px 3px 0px #000;
+  box-shadow: 0px 3px 0px #271077;
   transition: 300ms;
 }
 
@@ -370,7 +370,13 @@ body, html {
 }
 
 /* Адаптив */
-@media (max-width: 991.99px) {
+@media (max-width: 1199.98px) {
+  .aboutus__feedback {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 991.98px) {
   .header__row {
     height: 80px;
   }
@@ -446,20 +452,36 @@ body, html {
     padding: 90px 0 0 0;
   }
   .aboutus__column_1 {
-    flex: 0 1 50%;
+    flex: 0 1 60%;
   }
   .aboutus__column_2 {
-    flex: 0 1 50%;
+    flex: 0 1 40%;
+    border-radius: 10px;
   }
   .aboutus__title {
     font-size: 30px;
   }
   .aboutus__subtitle {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  .aboutus__card {
+    padding: 20px;
+  }
+  .aboutus__feedback {
+    padding: 15px 20px;
+  }
+  .feedback__title {
+    font-size: 22px;
+  }
+  .feedback__field input {
+    font-size: 16px;
+  }
+  .feedback__button {
+    font-size: 16px;
   }
 }
 
-@media (max-width: 767.99px) {
+@media (max-width: 767.98px) {
   .header__row {
     height: 70px;
   }
@@ -476,21 +498,28 @@ body, html {
     font-size: 14px;
   }
   .aboutus {
-    padding: 0 0 20px 0;
+    padding: 30px 0 20px 0;
   }
   .aboutus__row {
     flex-wrap: wrap;
   }
   .aboutus__column_1 {
     flex: 0 1 100%;
+    margin: 0px 0px 10px 0px;
   }
   .aboutus__column_2 {
     flex: 0 1 100%;
     border-radius: 10px;
   }
+  .aboutus__card {
+    padding: 0px;
+  }
+  .aboutus__feedback {
+    padding: 30px 50px;
+  }
 }
 
-@media (max-width: 575.99px) {
+@media (max-width: 575.98px) {
   .header__row {
     height: 60px;
   }
@@ -536,6 +565,6 @@ body, html {
     padding: 70px 0 0 0;
   }
   .aboutus__feedback {
-    padding: 15px;
+    padding: 20px 25px;
   }
 }
