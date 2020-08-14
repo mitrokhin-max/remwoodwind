@@ -20,8 +20,10 @@ $color_main: #2f78ff;
 $color_second: rgb(23, 10, 134);
 $color_title: #000;
 $color_text: #81858e;
-$fz_title: 26px;
+$fz_title: 30px;
+$fz_subtitle: 26px;
 $fz_text: 18px;
+$bgc_1: rgb(184, 184, 184);
 
 /* Шапка */
 .header {
@@ -62,6 +64,7 @@ $fz_text: 18px;
 		}
 
 		&__menu {
+            background-color: #fff;
 		}
 
 		&__list {
@@ -171,8 +174,119 @@ $fz_text: 18px;
 
 /* Контентная часть */
 .content {
+    padding: 110px 0 0 0;
     flex: 1 0 auto;
+    height: 200vh;
 }
+
+/* Блок О нас */
+.aboutus {
+    background-color: $color_main;
+        &__container {
+        }
+
+        &__row {
+            display: flex;
+        }
+
+        &__column {
+            &_1 {
+                flex: 0 1 60%;
+            }
+            &_2 {
+                flex: 0 1 40%;
+                background-color: $bgc_1;
+            }
+        }
+
+        &__card {
+            padding: 30px;
+            color: #fff;
+        }
+
+        &__title {
+            font-size: 34px;
+            margin: 0px 0px 30px 0px;
+        }
+
+        &__subtitle {
+            font-size: $fz_title;
+            margin: 0px 0px 20px 0px;
+        }
+
+        &__description {
+            font-size: $fz_text;
+            margin: 0px 0px 10px 0px;
+        }
+
+        &__feedback {
+            padding: 30px;
+        }
+}
+
+.feedback {
+
+    &__title {
+        font-size: $fz_subtitle;
+        color: #fff;
+        margin: 0px 0px 20px 0px;
+    }
+
+    &__form {
+        border: 2px solid $color_second;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    &__point {
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__question {
+        font-size: $fz_text;
+        color: #fff;
+        margin: 0px 0px 7px 0px;
+    }
+
+    &__field {
+            input, textarea {
+                border-radius: 5px;
+                padding: 5px 15px;
+                font-size: $fz_text;
+                color: $color_text;
+                width: 100%;
+                border: 2px solid $color_second;
+            }
+            textarea {
+                resize: none;
+            }
+    }
+
+    &__privicy {
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__checkbox {
+    }
+
+    &__send {
+    }
+
+    &__button {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $color_second;
+        color: #fff;
+        font-size: $fz_text;
+        box-shadow: 0px 3px 0px #000;
+        transition: 300ms;
+            &:hover {
+                box-shadow: 0px 0px 0px #000;
+                transform: translateY(3px);
+            }
+    }
+}
+
 
 /* Футер */
 .footer {

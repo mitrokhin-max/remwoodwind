@@ -23,7 +23,7 @@
                     <nav class="header__menu">
                         <ul class="header__list">
                             <li class="header__link">
-                                <a href="#">Главная</a>
+                                <a href="#aboutus">О нас</a>
                             </li>
                             <li class="header__link">
                                 <a href="#">Преимущества</a>
@@ -41,7 +41,7 @@
                                 <a href="#">Вопрос-ответ</a>
                             </li>
                             <li class="header__link">
-                                <a href="#">Контакты</a>
+                                <a href="#">Примеры работ</a>
                             </li>
                             <li class="header__link">
                                 <a href="#">Контакты</a>
@@ -74,7 +74,49 @@
             </div>
         </header>
 
-        <main class="content"></main>
+        <main class="content">
+            <!-- Блок О нас -->
+            <section class="aboutus" id="aboutus">
+                <div class="aboutus__container container">
+                    <div class="aboutus__row">
+                        <div class="aboutus__column aboutus__column_1">
+                            <div class="aboutus__card">
+                                <h1 class="aboutus__title">RemWoodWind - москитные сетки и ремонт пластиковых окон</h1>
+                                <h2 class="aboutus__subtitle">Кто мы?</h2>
+                                <p class="aboutus__description">Labore nulla! Provident, quo. Consectetur nisi, assumenda, omnis libero aut rem sit veritatis numquam ea quo beatae? Reprehenderit accusamus omnis saepe hic nam magnam quaerat eaque maiores minima cupiditate! Quam, qui nostrum.</p>
+                                <p class="aboutus__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus similique illum libero et error sit ipsa placeat assumenda in. Aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vero consequuntur odit magni! Dolores, deleniti.</p>
+                            </div>
+                        </div>
+                        <div class="aboutus__column aboutus__column_2">
+                            <div class="aboutus__feedback feedback">
+                                <h3 class="feedback__title">Закажите звонок, мы свяжемся с вами в ближайшее время</h3>
+                                <form action="#" method="POST" class="feedback__form">
+                                    <div class="feedback__point">
+                                        <p class="feedback__question">Как к Вам обращаться?</p>
+                                        <p class="feedback__field"><input type="text" name="user_name" placeholder="Имя" required></p>
+                                    </div>
+                                    <div class="feedback__point">
+                                        <p class="feedback__question">Укажите Ваш номер телефона:</p>
+                                        <p class="feedback__field"><input type="tel" name="user_phone" placeholder="Телефон" required></p>
+                                    </div>
+                                    <div class="feedback__point feedback__point_quest">
+                                        <p class="feedback__question">Ваш вопрос (если есть):</p>
+                                        <p class="feedback__field"><textarea name="user_quest" rows="2"></textarea></p>
+                                    </div>
+                                    <div class="feedback__privicy">
+                                        <p class="feedback__checkbox"><input type="checkbox" required> Согласен на <a href="#">обработку персональных данных</a></p>
+                                    </div>
+                                    <div class="feedback__send">
+                                        <button type="submit" class="feedback__button">Отправить заявку</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
 
         <footer class="footer"></footer>
 

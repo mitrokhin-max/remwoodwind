@@ -1,20 +1,20 @@
 /* Адаптивный контейнер */
-@media (max-width: 1199.99px) {
+@media (max-width: 1199.98px) {
     .container {
         max-width: 960px;
     }
 }
-@media (max-width: 991.99px) {
+@media (max-width: 991.98px) {
     .container {
         max-width: 720px;
     }
 }
-@media (max-width: 767.99px) {
+@media (max-width: 767.98px) {
     .container {
         max-width: 540px;
     }
 }
-@media (max-width: 575.99px) {
+@media (max-width: 575.98px) {
     .container {
         max-width: 100%;
     }
@@ -27,6 +27,7 @@
 @media (max-width: 991.99px) {
     // Переменные
     $fz_contacts_992: 16px;
+    $fz_subtitle_992: 24px;
 
     .header {
 
@@ -48,9 +49,9 @@
             height: 95px;
             transition: 500ms;
             // border-top: 1px solid rgba(201, 201, 201, 0.15);
-            border-bottom: 1px solid rgba(201, 201, 201, 0.25);
+            border-bottom: 1px solid rgb(201, 201, 201);
                 &.active {
-                    top: 100px;
+                    top: 90px;
                     height: 75px;
                 }
 		}
@@ -122,7 +123,37 @@
                         top: 50%;
                     }
                 }
-		}
+        }
+        
+    }
+
+    .content {
+        padding: 90px 0 0 0;
+    }
+
+    .aboutus {
+        &__column {
+            &_1 {
+                flex: 0 1 50%;
+            }
+            &_2 {
+                flex: 0 1 50%;
+            }
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__subtitle {
+            font-size: $fz_subtitle_992;
+        }
+    }
+
+    .feedback {
+        &__point {
+            
+        }
     }
 }
 
@@ -142,13 +173,29 @@
         &__menu {
             height: 90px;
             &.active {
-                top: 90px;
+                top: 80px;
             }
         }
 
         &__contacts {
             a {
                 font-size: $fz_text_768;
+            }
+        }
+    }
+
+    .aboutus {
+        padding: 0 0 20px 0;
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__column {
+            &_1 {
+                flex: 0 1 100%;
+            }
+            &_2 {
+                flex: 0 1 100%;
+                border-radius: 10px;
             }
         }
     }
@@ -170,7 +217,7 @@
             top: -70px;
             height: 150px;
                 &.active {
-                    top: 80px;
+                    top: 70px;
                     height: 140px;
                 }
 		}
@@ -218,6 +265,15 @@
 
 		&__burger {
 		}
-}
+    }
 
+    .content {
+        padding: 70px 0 0 0;
+    }
+
+    .aboutus {
+        &__feedback {
+            padding: 15px;
+        }
+    }
 }
