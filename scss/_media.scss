@@ -22,10 +22,8 @@
 
 /* Адаптив */
 @media (max-width: 1199.98px) {
-    .aboutus {
-        &__feedback {
+    .feedback {
             padding: 30px 50px;
-        }
     }
 }
 
@@ -138,6 +136,10 @@
     }
 
     .aboutus {
+        &__row {
+            align-items: center;
+        }
+
         &__column {
             &_1 {
                 flex: 0 1 60%;
@@ -160,12 +162,13 @@
             padding: 20px;
         }
 
-        &__feedback {
-            padding: 15px 20px;
+        &__feedback {            
         }
     }
 
     .feedback {
+        padding: 15px 20px;
+
         &__title {
             font-size: $fz_subtitle_992;
         }
@@ -177,6 +180,21 @@
         }
 
         &__button {
+            font-size: $fz_text_992;
+        }
+    }
+
+    .advantages {
+        &__column {
+            flex: 0 1 50%;
+            margin: 0px 0px 20px 0px;
+        }
+
+        &__title {
+            font-size: $fz_subtitle_992;
+        }
+
+        &__text {
             font-size: $fz_text_992;
         }
     }
@@ -229,11 +247,16 @@
             padding: 0px;
         }
 
-        &__feedback {
-            padding: 30px 50px;
+        &__feedback {            
         }
     }
+
+    .feedback {
+        padding: 30px 50px;
+    }
+    
 }
+
 @media (max-width: 575.98px) {
     // Переменные
     $fz_text_576: 12px;
@@ -308,6 +331,13 @@
     .aboutus {
         &__feedback {
             padding: 20px 25px;
+        }
+    }
+
+    .advantages {
+        &__column {
+            flex: 0 1 100%;
+            margin: 0px 20px 20px 20px;
         }
     }
 }

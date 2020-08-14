@@ -21,7 +21,7 @@ $color_second: rgb(33, 16, 190);
 $color_title: #000;
 $color_text: #81858e;
 $fz_title: 30px;
-$fz_subtitle: 26px;
+$fz_subtitle: 24px;
 $fz_text: 18px;
 $bgc_1: rgb(184, 184, 184);
 
@@ -181,13 +181,13 @@ $bgc_1: rgb(184, 184, 184);
 
 /* Блок О нас */
 .aboutus {
+    margin: 0px 0px 50px 0px;
     background-color: $color_main;
         &__container {
         }
 
         &__row {
             display: flex;
-            align-items: center;
         }
 
         &__column {
@@ -220,13 +220,12 @@ $bgc_1: rgb(184, 184, 184);
             margin: 0px 0px 10px 0px;
         }
 
-        &__feedback {
-            padding: 30px 70px;
+        &__feedback {            
         }
 }
 
 .feedback {
-    
+    padding: 30px 70px;
         &__title {
             font-size: $fz_subtitle;
             color: #fff;
@@ -283,6 +282,93 @@ $bgc_1: rgb(184, 184, 184);
                     box-shadow: 0px 0px 0px #000;
                     transform: translateY(3px);
                 }
+        }
+}
+
+.advantages {
+    margin: 0px 0px 50px 0px;
+        &__container {
+        }
+
+        &__title {
+        }
+
+        &__row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+        }
+
+        &__column {
+            flex: 0 1 25%;
+            padding: 0 10px;
+        }
+
+        &__card {
+        }
+}
+
+.title {
+    font-size: $fz_title;
+    text-align: center;
+    position: relative;
+    padding: 0 0 20px 0;
+    margin: 0px 0px 40px 0px;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 46.5%;
+            width: 7%;
+            height: 3px;
+            background-color: $color_main;
+        }
+}
+
+.card-adv {
+    background-color: #FCFCFC;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    height: 100%;
+    padding: 20px;
+    min-height: 250px;
+    
+        &__row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            // justify-content: center;
+            height: 100%;
+        }
+
+        &__col {
+            flex: 0 1 100%;
+            &_1 {
+            }
+            &_2 {
+            }
+            &_3 {
+                margin: 10px 0px 0px 0px;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            text-align: center;
+                img {
+                    max-width: 100%;
+                }
+        }
+
+        &__title {
+            font-size: $fz_subtitle;
+            text-align: center;
+        }
+
+        &__text {
+            font-size: $fz_text;
+            color: $color_text;
+            text-align: center;
         }
 }
 

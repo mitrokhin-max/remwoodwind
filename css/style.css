@@ -248,12 +248,12 @@ body, html {
 
 /* Блок О нас */
 .aboutus {
+  margin: 0px 0px 50px 0px;
   background-color: #2f78ff;
 }
 
 .aboutus__row {
   display: flex;
-  align-items: center;
 }
 
 .aboutus__column_1 {
@@ -285,12 +285,12 @@ body, html {
   margin: 0px 0px 10px 0px;
 }
 
-.aboutus__feedback {
+.feedback {
   padding: 30px 70px;
 }
 
 .feedback__title {
-  font-size: 26px;
+  font-size: 24px;
   color: #fff;
   margin: 0px 0px 20px 0px;
 }
@@ -342,6 +342,83 @@ body, html {
   transform: translateY(3px);
 }
 
+.advantages {
+  margin: 0px 0px 50px 0px;
+}
+
+.advantages__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.advantages__column {
+  flex: 0 1 25%;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding: 0 0 20px 0;
+  margin: 0px 0px 40px 0px;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 46.5%;
+  width: 7%;
+  height: 3px;
+  background-color: #2f78ff;
+}
+
+.card-adv {
+  background-color: #FCFCFC;
+  border: 1px solid #F5F5F5;
+  border-radius: 10px;
+  height: 100%;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.card-adv__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+
+.card-adv__col {
+  flex: 0 1 100%;
+}
+
+.card-adv__col_3 {
+  margin: 10px 0px 0px 0px;
+}
+
+.card-adv__img {
+  width: 100%;
+  text-align: center;
+}
+
+.card-adv__img img {
+  max-width: 100%;
+}
+
+.card-adv__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.card-adv__text {
+  font-size: 18px;
+  color: #81858e;
+  text-align: center;
+}
+
 /* Футер */
 /* Адаптив */
 /* Адаптивный контейнер */
@@ -371,7 +448,7 @@ body, html {
 
 /* Адаптив */
 @media (max-width: 1199.98px) {
-  .aboutus__feedback {
+  .feedback {
     padding: 30px 50px;
   }
 }
@@ -451,6 +528,9 @@ body, html {
   .content {
     padding: 90px 0 0 0;
   }
+  .aboutus__row {
+    align-items: center;
+  }
   .aboutus__column_1 {
     flex: 0 1 60%;
   }
@@ -467,7 +547,7 @@ body, html {
   .aboutus__card {
     padding: 20px;
   }
-  .aboutus__feedback {
+  .feedback {
     padding: 15px 20px;
   }
   .feedback__title {
@@ -477,6 +557,16 @@ body, html {
     font-size: 16px;
   }
   .feedback__button {
+    font-size: 16px;
+  }
+  .advantages__column {
+    flex: 0 1 50%;
+    margin: 0px 0px 20px 0px;
+  }
+  .advantages__title {
+    font-size: 22px;
+  }
+  .advantages__text {
     font-size: 16px;
   }
 }
@@ -514,7 +604,7 @@ body, html {
   .aboutus__card {
     padding: 0px;
   }
-  .aboutus__feedback {
+  .feedback {
     padding: 30px 50px;
   }
 }
@@ -566,5 +656,9 @@ body, html {
   }
   .aboutus__feedback {
     padding: 20px 25px;
+  }
+  .advantages__column {
+    flex: 0 1 100%;
+    margin: 0px 20px 20px 20px;
   }
 }
