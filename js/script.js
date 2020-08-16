@@ -15,13 +15,8 @@ $(document).ready(function() {
 var kinds = new Swiper('.kinds__slider', {
     slidesPerView: 'auto',
     freeMode: true,
-    loop: false,
     spaceBetween: 20,
-    // loopedSlides: 8,
     breakpoints: {
-        576: {
-            spaceBetween: 20
-        },
         768: {
             spaceBetween: 30
         },

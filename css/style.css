@@ -427,7 +427,9 @@ body, html {
 }
 
 .kinds {
-  margin: 0px 0px 50px 0px;
+  background-color: #fafafa;
+  padding: 50px 0;
+  margin: 0px 0px 0px 0px;
 }
 
 .kinds__slider {
@@ -469,6 +471,22 @@ body, html {
 
 .slide-kind {
   width: 34%;
+  position: relative;
+}
+
+.slide-kind::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 26, 26, 0.5);
+  transition: 500ms;
+}
+
+.slide-kind:hover::after {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slide-kind_hit {
@@ -478,6 +496,8 @@ body, html {
 
 .slide-kind_hit::before {
   content: 'Хит продаж';
+  position: relative;
+  z-index: 2;
   font-size: 18px;
   color: #fff;
   background-color: #ffd92d;
@@ -491,6 +511,8 @@ body, html {
 }
 
 .slide-kind__row {
+  position: relative;
+  z-index: 2;
   margin: 250px 0px 0 0px;
   padding: 0 30px 0 30px;
   display: flex;
@@ -517,6 +539,80 @@ body, html {
   color: #ffd92d;
   font-size: 16px;
   font-weight: 700;
+}
+
+.pattern {
+  background-color: #2110be;
+  margin: 0px 0px 50px 0px;
+  padding: 50px 0;
+}
+
+.pattern__title {
+  color: #fff;
+}
+
+.pattern__row {
+  display: flex;
+}
+
+.pattern__column {
+  flex: 0 1 25%;
+}
+
+.part {
+  position: relative;
+  padding: 0 20px;
+  min-height: 150px;
+}
+
+.part::before, .part:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 15px;
+  height: 2px;
+  background-color: #c7c7c7;
+}
+
+.part::before {
+  transform: rotate(45deg);
+  top: calc(50% - 5px);
+}
+
+.part::after {
+  transform: rotate(-45deg);
+  top: calc(50% + 5px);
+}
+
+.part__row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.part__col {
+  margin: 0px 0px 20px 0px;
+}
+
+.part__img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+  width: 100px;
+}
+
+.part__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.part__number {
+  color: #fff;
+  font-size: 24px;
+}
+
+.part__text {
+  color: #81858e;
 }
 
 /* Футер */

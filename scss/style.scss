@@ -377,7 +377,9 @@ $bgc_1: rgb(184, 184, 184);
 }
 
 .kinds {
-    margin: 0px 0px 50px 0px;
+    background-color: rgb(250, 250, 250);
+    padding: 50px 0;
+    margin: 0px 0px 0px 0px;
         .swiper-container {            
         }
 
@@ -427,11 +429,30 @@ $bgc_1: rgb(184, 184, 184);
 
 .slide-kind {
     width: 34%;
+    position: relative;
+    // border-radius: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(26, 26, 26, 0.5);
+        transition: 500ms;
+    }
+    &:hover::after {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
     &_hit {
         border: 7px solid $color_dop;
         position: relative;
         &::before {
             content: 'Хит продаж';
+            position: relative;
+            z-index: 2;
             font-size: $fz_text;
             color: #fff;
             background-color: $color_dop;
@@ -445,6 +466,8 @@ $bgc_1: rgb(184, 184, 184);
         }
     }
         &__row {
+            position: relative;
+            z-index: 2;
             // height: 50%;
             margin: 250px 0px 0 0px;
             padding: 0 30px 0 30px;
@@ -475,10 +498,89 @@ $bgc_1: rgb(184, 184, 184);
         }
 }
 
+.pattern {
+    background-color: $color_second;
+    margin: 0px 0px 50px 0px;
+    padding: 50px 0;
+
+		&__container {
+		}
+
+		&__title {
+            color: #fff;
+		}
+
+		&__row {
+            display: flex;
+            // margin: 0 -10px;
+		}
+
+		&__column {
+            flex: 0 1 25%;
+            // padding: 0 10px;
+		}
+
+		&__part {
+		}
+}
+
+.part {
+    position: relative;
+    padding: 0 20px;
+    min-height: 150px;
+    &::before, &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 15px;
+        height: 2px;
+        background-color: rgb(199, 199, 199);
+    }
+    &::before {
+        transform: rotate(45deg);
+        top: calc(50% - 5px);
+    }
+    &::after {
+        transform: rotate(-45deg);
+        top: calc(50% + 5px);
+    }
+
+		&__row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+		}
+
+		&__col {
+            margin: 0px 0px 20px 0px;
+		}
+
+		&__img {
+            border: 2px solid #fff;
+            border-radius: 50%;
+            padding: 15px;
+            width: 100px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+		}
+
+		&__number {
+            color: #fff;
+            font-size: $fz_subtitle;
+		}
+
+		&__text {
+            color: $color_text;
+		}
+}
+
+
 /* Футер */
 .footer {
 }
-
 
 /* Адаптив */
 @import 'media';
