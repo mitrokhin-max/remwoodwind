@@ -11,3 +11,22 @@ $(document).ready(function() {
         $('body,html').animate({scrollTop: top}, 1000);
     });
 });
+
+var kinds = new Swiper('.kinds__slider', {
+    slidesPerView: 'auto',
+    freeMode: true,
+    loop: true,
+    spaceBetween: 20,
+    // loopedSlides: 8,
+    breakpoints: {
+        576: {
+            spaceBetween: 20
+        },
+        768: {
+            spaceBetween: 30
+        },
+        992: {
+            spaceBetween: 40
+        }
+    }
+});

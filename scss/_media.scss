@@ -128,7 +128,6 @@
                     }
                 }
         }
-        
     }
 
     .content {
@@ -198,6 +197,28 @@
             font-size: $fz_text_992;
         }
     }
+
+    .kinds {
+            &__slider {
+                height: 400px;
+            }
+    }
+
+    .slide-kind {
+        width: 40%;
+            &__row {
+                margin: 180px 0px 0 0px;
+                padding: 0 20px 0 20px;
+            }
+
+            &__title  {
+                font-size: $fz_subtitle_992;
+            }
+
+            &__description, &__price {
+                font-size: $fz_text_992;
+            }
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -255,6 +276,18 @@
         padding: 30px 50px;
     }
     
+    .kinds {
+        &__slider {
+            height: 350px;
+        }
+    }
+
+    .slide-kind {
+        width: 55%;
+            &__row {
+                margin: 130px 0px 0 0px;
+            }
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -339,5 +372,18 @@
             flex: 0 1 100%;
             margin: 0px 20px 20px 20px;
         }
+    }
+
+    .kinds {
+        &__slider {
+            height: 370px;
+        }
+    }
+
+    .slide-kind {
+        width: 80%;
+            &__row {
+                margin: 130px 0px 0 0px;
+            }
     }
 }
