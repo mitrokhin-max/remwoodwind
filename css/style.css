@@ -435,9 +435,40 @@ body, html {
   height: 500px;
 }
 
+.kinds__slide_1 {
+  background: url(../img/files/ramka.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_2 {
+  background: url(../img/files/euro.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_3 {
+  background: url(../img/files/razdvizh.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_4 {
+  background: url(../img/files/dver.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_5 {
+  background: url(../img/files/antimoshka.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_6 {
+  background: url(../img/files/antikoshka.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_7 {
+  background: url(../img/files/antipyl.jpg) 0 0/cover no-repeat;
+}
+
+.kinds__slide_8 {
+  background: url(../img/files/nestand.jpg) 0 0/cover no-repeat;
+}
+
 .slide-kind {
-  background-color: #2e2e2e;
-  width: 35%;
+  width: 34%;
 }
 
 .slide-kind_hit {
@@ -478,13 +509,14 @@ body, html {
 }
 
 .slide-kind__description {
-  color: #81858e;
+  color: #fff;
   font-size: 18px;
 }
 
 .slide-kind__price {
-  color: #2f78ff;
+  color: #ffd92d;
   font-size: 16px;
+  font-weight: 700;
 }
 
 /* Футер */
@@ -518,6 +550,9 @@ body, html {
 @media (max-width: 1199.98px) {
   .feedback {
     padding: 30px 50px;
+  }
+  .slide-kind {
+    width: 40%;
   }
 }
 
@@ -641,7 +676,7 @@ body, html {
     height: 400px;
   }
   .slide-kind {
-    width: 40%;
+    width: 42%;
   }
   .slide-kind__row {
     margin: 180px 0px 0 0px;
@@ -692,13 +727,13 @@ body, html {
     padding: 30px 50px;
   }
   .kinds__slider {
-    height: 350px;
+    height: 370px;
   }
   .slide-kind {
     width: 55%;
   }
   .slide-kind__row {
-    margin: 130px 0px 0 0px;
+    margin: 150px 0px 0 0px;
   }
 }
 

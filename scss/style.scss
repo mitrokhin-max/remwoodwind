@@ -396,13 +396,37 @@ $bgc_1: rgb(184, 184, 184);
         }
 
         &__slide {
+            &_1 {
+                background: url(../img/files/ramka.jpg) 0 0/cover no-repeat;
+                
+            }
+            &_2 {
+                background: url(../img/files/euro.jpg) 0 0/cover no-repeat;
+            }
+            &_3 {
+                background: url(../img/files/razdvizh.jpg) 0 0/cover no-repeat;
+            }
+            &_4 {
+                background: url(../img/files/dver.jpg) 0 0/cover no-repeat;
+            }
+            &_5 {
+                background: url(../img/files/antimoshka.jpg) 0 0/cover no-repeat;
+            }
+            &_6 {
+                background: url(../img/files/antikoshka.jpg) 0 0/cover no-repeat;
+            }
+            &_7 {
+                background: url(../img/files/antipyl.jpg) 0 0/cover no-repeat;
+            }
+            &_8 {
+                background: url(../img/files/nestand.jpg) 0 0/cover no-repeat;
+            }
         }
 }
 
 
 .slide-kind {
-    background-color: rgb(46, 46, 46);
-    width: 35%;
+    width: 34%;
     &_hit {
         border: 7px solid $color_dop;
         position: relative;
@@ -440,13 +464,14 @@ $bgc_1: rgb(184, 184, 184);
         }
 
         &__description {
-            color: $color_text;
+            color: #fff;
             font-size: $fz_text;
         }
 
         &__price {
-            color: $color_main;
+            color: $color_dop;
             font-size: $fz_dop;
+            font-weight: 700;
         }
 }
 
