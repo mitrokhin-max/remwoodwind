@@ -422,6 +422,7 @@ body, html {
 
 .card-adv__text {
   font-size: 18px;
+  line-height: 20px;
   color: #81858e;
   text-align: center;
 }
@@ -533,6 +534,7 @@ body, html {
 .slide-kind__description {
   color: #fff;
   font-size: 18px;
+  line-height: 20px;
 }
 
 .slide-kind__price {
@@ -542,7 +544,7 @@ body, html {
 }
 
 .pattern {
-  margin: 0px 0px 50px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 50px 0;
 }
 
@@ -617,6 +619,62 @@ body, html {
 .part__text {
   color: #81858e;
   text-align: center;
+  line-height: 16px;
+}
+
+.examples {
+  margin: 0px 0px 50px 0px;
+  padding: 0 0 50px 0;
+}
+
+.examples__container {
+  max-width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.examples__slider {
+  width: 100%;
+  height: 450px;
+}
+
+.examples__slide {
+  background-color: rgba(235, 235, 235, 0.342);
+  width: 25%;
+}
+
+.examples__img {
+  width: 100%;
+  height: 100%;
+}
+
+.examples__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.examples__pagination {
+  bottom: -40px;
+  left: calc(50% - 40px);
+}
+
+.examples__button-prev::before, .examples__button-prev::after {
+  color: #2f78ff;
+}
+
+.examples__button-next::before, .examples__button-next::after {
+  color: #2f78ff;
+}
+
+.examples .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 3px;
+}
+
+.examples .swiper-pagination-bullet-active {
+  background-color: #2f78ff;
 }
 
 /* Футер */
@@ -653,6 +711,16 @@ body, html {
   }
   .slide-kind {
     width: 40%;
+  }
+  .examples__container {
+    max-width: 100%;
+    padding: 0;
+  }
+  .examples__slider {
+    height: 400px;
+  }
+  .examples__slide {
+    width: 27%;
   }
 }
 
@@ -795,6 +863,12 @@ body, html {
     flex: 0 1 33.333%;
     margin: 0px 0px 20px 0px;
   }
+  .examples__slider {
+    height: 450px;
+  }
+  .examples__slide {
+    width: 40%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -841,6 +915,12 @@ body, html {
   }
   .slide-kind__row {
     margin: 150px 0px 0 0px;
+  }
+  .examples__slider {
+    height: 400px;
+  }
+  .examples__slide {
+    width: 47%;
   }
 }
 
@@ -921,5 +1001,11 @@ body, html {
   .part__img {
     width: 100px;
     height: 100px;
+  }
+  .examples__slider {
+    height: 350px;
+  }
+  .examples__slide {
+    width: 72%;
   }
 }

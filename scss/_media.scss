@@ -29,6 +29,21 @@
     .slide-kind{
         width: 40%;
     }
+
+    .examples {
+        &__container {
+            max-width: 100%;
+            padding: 0;
+        }
+        
+        &__slider {
+            height: 400px;
+        }
+
+        &__slide {
+            width: 27%;
+        }
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -234,6 +249,16 @@
                 margin: 0px 0px 20px 0px;
             }
     }
+
+    .examples {
+        &__slider {
+            height: 450px;
+        }
+
+        &__slide {
+            width: 40%;
+        }
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -302,6 +327,16 @@
             &__row {
                 margin: 150px 0px 0 0px;
             }
+    }
+
+    .examples {
+        &__slider {
+            height: 400px;
+        }
+
+        &__slide {
+            width: 47%;
+        }
     }
 }
 
@@ -426,6 +461,16 @@
         &__img {
             width: 100px;
             height: 100px;
+        }
+    }
+
+    .examples {
+        &__slider {
+            height: 350px;
+        }
+
+        &__slide {
+            width: 72%;
         }
     }
 }

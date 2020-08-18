@@ -16,6 +16,7 @@ var kinds = new Swiper('.kinds__slider', {
     slidesPerView: 'auto',
     freeMode: true,
     spaceBetween: 20,
+    grabCursor: true,
     breakpoints: {
         768: {
             spaceBetween: 30
@@ -25,3 +26,24 @@ var kinds = new Swiper('.kinds__slider', {
         }
     }
 });
+
+var examples = new Swiper('.examples__slider', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: true,
+    // loopedSlides: 5,
+    spaceBetween: 20,
+    autoplay: {
+        delay: 5000,
+    },
+
+    pagination: {
+        el: '.examples__pagination',
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: '.examples__button-next',
+        prevEl: '.examples__button-prev',
+    },
+})

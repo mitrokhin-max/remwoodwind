@@ -371,6 +371,7 @@ $bgc_1: rgb(184, 184, 184);
 
         &__text {
             font-size: $fz_text;
+            line-height: 20px;
             color: $color_text;
             text-align: center;
         }
@@ -489,6 +490,7 @@ $bgc_1: rgb(184, 184, 184);
         &__description {
             color: #fff;
             font-size: $fz_text;
+            line-height: 20px;
         }
 
         &__price {
@@ -500,7 +502,7 @@ $bgc_1: rgb(184, 184, 184);
 
 .pattern {
     // background-color: $color_second;
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 50px 0;
 
 		&__container {
@@ -584,8 +586,73 @@ $bgc_1: rgb(184, 184, 184);
 		&__text {
             color: $color_text;
             text-align: center;
+            line-height: 16px;
 		}
 }
+
+.examples {
+    margin: 0px 0px 50px 0px;
+    padding: 0 0 50px 0;
+		&__container {
+            max-width: 100%;
+            padding: 0;
+            position: relative;
+		}
+
+		&__title {
+		}
+
+		&__slider {
+            width: 100%;
+            height: 450px;
+		}
+
+		&__wrapper {
+		}
+
+		&__slide {
+            background-color: rgba(235, 235, 235, 0.342);
+            width: 25%;
+		}
+
+		&__img {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+		}
+
+		&__pagination {
+            bottom: -40px;
+            left: calc(50% - 40px);
+		}
+
+		&__button-prev {
+            &::before, &::after {
+                color: $color_main;
+            }
+		}
+
+		&__button-next {
+            &::before, &::after {
+                color: $color_main;
+            }
+        }
+        
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 3px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: $color_main;
+        }
+}
+
 
 
 /* Футер */
