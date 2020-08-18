@@ -223,6 +223,17 @@
                 font-size: $fz_text_992;
             }
     }
+
+    .pattern {
+            &__row {
+                flex-wrap: wrap;
+            }
+
+            &__column {
+                flex: 0 1 33.333%;
+                margin: 0px 0px 20px 0px;
+            }
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -389,5 +400,32 @@
             &__row {
                 margin: 130px 0px 0 0px;
             }
+    }
+
+    .pattern {
+        &__column {
+            flex: 0 1 50%;
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    .part {
+        &_arrow {
+            &::before, &::after {
+                right: -15px;
+            }
+        }
+        
+        &::before {
+            top: 44px;
+        }
+        &::after {
+            top: 56px;
+        }
+
+        &__img {
+            width: 100px;
+            height: 100px;
+        }
     }
 }

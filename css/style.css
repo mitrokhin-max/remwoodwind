@@ -542,46 +542,46 @@ body, html {
 }
 
 .pattern {
-  background-color: #2110be;
   margin: 0px 0px 50px 0px;
   padding: 50px 0;
 }
 
-.pattern__title {
-  color: #fff;
-}
-
 .pattern__row {
   display: flex;
+  margin: 0 -10px;
 }
 
 .pattern__column {
-  flex: 0 1 25%;
+  flex: 0 1 16.667%;
+  padding: 0 10px;
 }
 
 .part {
   position: relative;
-  padding: 0 20px;
   min-height: 150px;
 }
 
-.part::before, .part:after {
+.part::before, .part::after {
   content: '';
   position: absolute;
-  right: 0;
-  width: 15px;
-  height: 2px;
+  right: -20px;
+  width: 20px;
+  height: 3px;
   background-color: #c7c7c7;
 }
 
 .part::before {
   transform: rotate(45deg);
-  top: calc(50% - 5px);
+  top: 54px;
 }
 
 .part::after {
   transform: rotate(-45deg);
-  top: calc(50% + 5px);
+  top: 66px;
+}
+
+.part_last::before, .part_last::after {
+  display: none;
 }
 
 .part__row {
@@ -591,28 +591,32 @@ body, html {
 }
 
 .part__col {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 .part__img {
-  border: 2px solid #fff;
+  border: 2px solid #81858e;
   border-radius: 50%;
-  padding: 15px;
-  width: 100px;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  background-color: #FCFCFC;
 }
 
 .part__img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .part__number {
-  color: #fff;
   font-size: 24px;
+  text-align: center;
 }
 
 .part__text {
   color: #81858e;
+  text-align: center;
 }
 
 /* Футер */
@@ -784,6 +788,13 @@ body, html {
   .slide-kind__description, .slide-kind__price {
     font-size: 16px;
   }
+  .pattern__row {
+    flex-wrap: wrap;
+  }
+  .pattern__column {
+    flex: 0 1 33.333%;
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -893,5 +904,22 @@ body, html {
   }
   .slide-kind__row {
     margin: 130px 0px 0 0px;
+  }
+  .pattern__column {
+    flex: 0 1 50%;
+    margin: 0px 0px 20px 0px;
+  }
+  .part_arrow::before, .part_arrow::after {
+    right: -15px;
+  }
+  .part::before {
+    top: 44px;
+  }
+  .part::after {
+    top: 56px;
+  }
+  .part__img {
+    width: 100px;
+    height: 100px;
   }
 }
