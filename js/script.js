@@ -33,6 +33,7 @@ var examples = new Swiper('.examples__slider', {
     loop: true,
     // loopedSlides: 5,
     spaceBetween: 20,
+    slideToClickedSlide: true,
     autoplay: {
         delay: 5000,
     },
@@ -46,4 +47,7 @@ var examples = new Swiper('.examples__slider', {
         nextEl: '.examples__button-next',
         prevEl: '.examples__button-prev',
     },
-})
+});
+
+
+AOS.init();
