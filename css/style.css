@@ -634,35 +634,31 @@ body, html {
 }
 
 .repair__slide_1 {
-  background: url(../img/files/ramka.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/regul.jpg) 0 0/cover no-repeat;
 }
 
 .repair__slide_2 {
-  background: url(../img/files/euro.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/balkon.jpg) 0 0/cover no-repeat;
 }
 
 .repair__slide_3 {
-  background: url(../img/files/razdvizh.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/uplotbig.jpg) 0 0/cover no-repeat;
 }
 
 .repair__slide_4 {
-  background: url(../img/files/dver.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/uplotsm.jpg) 0 0/cover no-repeat;
 }
 
 .repair__slide_5 {
-  background: url(../img/files/antimoshka.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/steklo.jpg) 0 0/cover no-repeat;
 }
 
 .repair__slide_6 {
-  background: url(../img/files/antikoshka.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/furnitura.jpg) 0 0/cover no-repeat;
 }
 
 .repair__slide_7 {
-  background: url(../img/files/antipyl.jpg) 0 0/cover no-repeat;
-}
-
-.repair__slide_8 {
-  background: url(../img/files/nestand.jpg) 0 0/cover no-repeat;
+  background: url(../img/files/ruchki.jpg) 0 0/cover no-repeat;
 }
 
 .slide-repair {
