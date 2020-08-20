@@ -4,7 +4,7 @@ $(document).ready(function() {
         $('body').toggleClass('lock');
     })
     
-    $("#list").on("click","a", function (event) {
+    $("#header__list").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
