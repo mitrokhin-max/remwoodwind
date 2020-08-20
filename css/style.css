@@ -302,18 +302,13 @@ body, html {
   margin: 0px 0px 15px 0px;
 }
 
-.feedback__field input, .feedback__field textarea {
+.feedback__field input {
   border-radius: 25px;
   padding: 5px 15px;
   font-size: 18px;
   color: #81858e;
   width: 100%;
   height: 40px;
-}
-
-.feedback__field textarea {
-  resize: none;
-  border-radius: 10px;
 }
 
 .feedback__privicy {
@@ -341,6 +336,7 @@ body, html {
   transform: translateY(3px);
 }
 
+/* Блок преимущества */
 .advantages {
   margin: 0px 0px 50px 0px;
 }
@@ -427,10 +423,11 @@ body, html {
   text-align: center;
 }
 
+/* Блок Цены на москитные сетки */
 .kinds {
   background-color: #fafafa;
   padding: 50px 0;
-  margin: 0px 0px 0px 0px;
+  margin: 0px 0px 50px 0px;
 }
 
 .kinds__slider {
@@ -543,9 +540,10 @@ body, html {
   font-weight: 700;
 }
 
+/* Блок Схема работы */
 .pattern {
-  margin: 0px 0px 0px 0px;
-  padding: 50px 0;
+  margin: 0px 0px 50px 0px;
+  padding: 0px 0;
 }
 
 .pattern__row {
@@ -622,6 +620,124 @@ body, html {
   line-height: 16px;
 }
 
+/* Блок Цены на ремонт */
+.repair {
+  background-color: #fafafa;
+  padding: 50px 0;
+  margin: 0px 0px 50px 0px;
+}
+
+.repair__slider {
+  width: 100%;
+  height: 500px;
+}
+
+.repair__slide_1 {
+  background: url(../img/files/ramka.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_2 {
+  background: url(../img/files/euro.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_3 {
+  background: url(../img/files/razdvizh.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_4 {
+  background: url(../img/files/dver.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_5 {
+  background: url(../img/files/antimoshka.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_6 {
+  background: url(../img/files/antikoshka.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_7 {
+  background: url(../img/files/antipyl.jpg) 0 0/cover no-repeat;
+}
+
+.repair__slide_8 {
+  background: url(../img/files/nestand.jpg) 0 0/cover no-repeat;
+}
+
+.slide-repair {
+  width: 34%;
+  position: relative;
+}
+
+.slide-repair::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 26, 26, 0.5);
+  transition: 500ms;
+}
+
+.slide-repair:hover::after {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-repair_hit {
+  border: 7px solid #ffd92d;
+  position: relative;
+}
+
+.slide-repair_hit::before {
+  content: 'Хит продаж';
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ffd92d;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 5px - 3em);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 10px 15px;
+}
+
+.slide-repair__row {
+  position: relative;
+  z-index: 2;
+  margin: 250px 0px 0 0px;
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.slide-repair__col {
+  margin: 0px 0px 20px 0px;
+}
+
+.slide-repair__title {
+  color: #fff;
+  font-size: 24px;
+}
+
+.slide-repair__description {
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.slide-repair__price {
+  color: #ffd92d;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Блок Примеры работ */
 .examples {
   margin: 0px 0px 50px 0px;
   padding: 0 0 50px 0;
@@ -657,6 +773,7 @@ body, html {
 .examples__pagination {
   bottom: -40px;
   left: calc(50% - 40px);
+  z-index: 2;
 }
 
 .examples__button-prev::before, .examples__button-prev::after {
@@ -677,7 +794,107 @@ body, html {
   background-color: #2f78ff;
 }
 
+.faq {
+  margin: 0px 0px 50px 0px;
+}
+
+.faq__item {
+  margin: 0px 0px 15px 0px;
+}
+
+.faq__question {
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 10px 40px 10px 15px;
+  margin: 0px 0px 10px 0px;
+  position: relative;
+}
+
+.faq__question::before, .faq__question::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 15px;
+  height: 3px;
+  background-color: #c7c7c7;
+  transition: 300ms;
+}
+
+.faq__question::before {
+  transform: rotate(45deg);
+  right: 19px;
+}
+
+.faq__question::after {
+  transform: rotate(-45deg);
+  right: 10px;
+}
+
+.faq__question.active::before {
+  transform: rotate(-45deg);
+}
+
+.faq__question.active::after {
+  transform: rotate(45deg);
+}
+
+.faq__answer {
+  display: none;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0 15px;
+}
+
 /* Футер */
+.footer {
+  padding: 20px 0 0 0;
+  background-color: #262026;
+}
+
+.footer__row {
+  display: flex;
+}
+
+.footer__column {
+  flex: 0 1 50%;
+}
+
+.footer__contacts {
+  height: 100%;
+  padding: 0 0 0 70px;
+}
+
+.footer__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer__col {
+  margin: 0px 0px 20px 0px;
+}
+
+.footer__title {
+  font-size: 30px;
+  color: #fff;
+}
+
+.footer__subtitle {
+  font-size: 24px;
+  color: #fff;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer__contact {
+  font-size: 24px;
+  color: #81858e;
+}
+
 /* Адаптив */
 /* Адаптивный контейнер */
 @media (max-width: 1199.98px) {
@@ -721,6 +938,9 @@ body, html {
   }
   .examples__slide {
     width: 27%;
+  }
+  .slide-repair {
+    width: 40%;
   }
 }
 
@@ -830,6 +1050,10 @@ body, html {
   .feedback__button {
     font-size: 16px;
   }
+  .title:after {
+    left: 45%;
+    width: 10%;
+  }
   .advantages__column {
     flex: 0 1 50%;
     margin: 0px 0px 20px 0px;
@@ -869,6 +1093,22 @@ body, html {
   .examples__slide {
     width: 40%;
   }
+  .repair__slider {
+    height: 400px;
+  }
+  .slide-repair {
+    width: 42%;
+  }
+  .slide-repair__row {
+    margin: 180px 0px 0 0px;
+    padding: 0 20px 0 20px;
+  }
+  .slide-repair__title {
+    font-size: 22px;
+  }
+  .slide-repair__description, .slide-repair__price {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -907,6 +1147,10 @@ body, html {
   .feedback {
     padding: 30px 50px;
   }
+  .title:after {
+    left: 44%;
+    width: 12%;
+  }
   .kinds__slider {
     height: 370px;
   }
@@ -921,6 +1165,39 @@ body, html {
   }
   .examples__slide {
     width: 47%;
+  }
+  .repair__slider {
+    height: 370px;
+  }
+  .slide-repair {
+    width: 55%;
+  }
+  .slide-repair__row {
+    margin: 150px 0px 0 0px;
+  }
+  .faq__question {
+    font-size: 22px;
+  }
+  .footer__row {
+    flex-wrap: wrap;
+  }
+  .footer__column {
+    flex: 0 1 100%;
+  }
+  .footer__column_1 {
+    order: 1;
+  }
+  .footer__column_2 {
+    order: 0;
+  }
+  .footer__body {
+    align-items: center;
+  }
+  .footer__contacts {
+    padding: 0;
+  }
+  .footer__title {
+    text-align: center;
   }
 }
 
@@ -972,6 +1249,10 @@ body, html {
   .aboutus__feedback {
     padding: 20px 25px;
   }
+  .title:after {
+    left: 43%;
+    width: 14%;
+  }
   .advantages__column {
     flex: 0 1 100%;
     margin: 0px 20px 20px 20px;
@@ -1007,5 +1288,17 @@ body, html {
   }
   .examples__slide {
     width: 72%;
+  }
+  .repair__slider {
+    height: 370px;
+  }
+  .slide-repair {
+    width: 80%;
+  }
+  .slide-repair__row {
+    margin: 130px 0px 0 0px;
+  }
+  .faq__question {
+    font-size: 18px;
   }
 }

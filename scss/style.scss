@@ -26,6 +26,9 @@ $fz_subtitle: 24px;
 $fz_text: 18px;
 $fz_dop: 16px;
 $bgc_1: rgb(184, 184, 184);
+$bgc_lightgray: #FCFCFC;
+$bgc_gray: rgb(250, 250, 250);
+$bgc_footer: #262026;
 
 /* Шапка */
 .header {
@@ -243,17 +246,13 @@ $bgc_1: rgb(184, 184, 184);
         }
 
         &__field {
-                input, textarea {
+                input {
                     border-radius: 25px;
                     padding: 5px 15px;
                     font-size: $fz_text;
                     color: $color_text;
                     width: 100%;
                     height: 40px;
-                }
-                textarea {
-                    resize: none;
-                    border-radius: 10px;
                 }
         }
 
@@ -287,6 +286,7 @@ $bgc_1: rgb(184, 184, 184);
         }
 }
 
+/* Блок преимущества */
 .advantages {
     margin: 0px 0px 50px 0px;
         &__container {
@@ -328,7 +328,7 @@ $bgc_1: rgb(184, 184, 184);
 }
 
 .card-adv {
-    background-color: #FCFCFC;
+    background-color: $bgc_lightgray;
     border: 1px solid #F5F5F5;
     border-radius: 10px;
     height: 100%;
@@ -377,10 +377,11 @@ $bgc_1: rgb(184, 184, 184);
         }
 }
 
+/* Блок Цены на москитные сетки */
 .kinds {
-    background-color: rgb(250, 250, 250);
+    background-color: $bgc_gray;
     padding: 50px 0;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 50px 0px;
         .swiper-container {            
         }
 
@@ -426,7 +427,6 @@ $bgc_1: rgb(184, 184, 184);
             }
         }
 }
-
 
 .slide-kind {
     width: 34%;
@@ -500,10 +500,11 @@ $bgc_1: rgb(184, 184, 184);
         }
 }
 
+/* Блок Схема работы */
 .pattern {
     // background-color: $color_second;
-    margin: 0px 0px 0px 0px;
-    padding: 50px 0;
+    margin: 0px 0px 50px 0px;
+    padding: 0px 0;
 
 		&__container {
 		}
@@ -568,7 +569,7 @@ $bgc_1: rgb(184, 184, 184);
             padding: 20px;
             width: 120px;
             height: 120px;
-            background-color: #FCFCFC;
+            background-color: $bgc_lightgray;
 
             img {
                 width: 100%;
@@ -590,6 +591,128 @@ $bgc_1: rgb(184, 184, 184);
 		}
 }
 
+/* Блок Цены на ремонт */
+.repair {
+    background-color: $bgc_gray;
+    padding: 50px 0;
+    margin: 0px 0px 50px 0px;
+
+        &__container {
+        }
+
+        &__title {
+        }
+
+        &__slider {
+            width: 100%;
+            height: 500px;
+        }
+
+        &__wrapper {
+        }
+
+        &__slide {
+            &_1 {
+                background: url(../img/files/ramka.jpg) 0 0/cover no-repeat;
+                
+            }
+            &_2 {
+                background: url(../img/files/euro.jpg) 0 0/cover no-repeat;
+            }
+            &_3 {
+                background: url(../img/files/razdvizh.jpg) 0 0/cover no-repeat;
+            }
+            &_4 {
+                background: url(../img/files/dver.jpg) 0 0/cover no-repeat;
+            }
+            &_5 {
+                background: url(../img/files/antimoshka.jpg) 0 0/cover no-repeat;
+            }
+            &_6 {
+                background: url(../img/files/antikoshka.jpg) 0 0/cover no-repeat;
+            }
+            &_7 {
+                background: url(../img/files/antipyl.jpg) 0 0/cover no-repeat;
+            }
+            &_8 {
+                background: url(../img/files/nestand.jpg) 0 0/cover no-repeat;
+            }
+        }
+}
+
+.slide-repair {
+    width: 34%;
+    position: relative;
+    // border-radius: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(26, 26, 26, 0.5);
+        transition: 500ms;
+    }
+    &:hover::after {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    &_hit {
+        border: 7px solid $color_dop;
+        position: relative;
+        &::before {
+            content: 'Хит продаж';
+            position: relative;
+            z-index: 2;
+            font-size: $fz_text;
+            color: #fff;
+            background-color: $color_dop;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: calc(50% - 5px - 3em);
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;            
+            padding: 10px 15px;
+        }
+    }
+        &__row {
+            position: relative;
+            z-index: 2;
+            // height: 50%;
+            margin: 250px 0px 0 0px;
+            padding: 0 30px 0 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &__col {
+            margin: 0px 0px 20px 0px;
+        }
+
+        &__title {
+            color: #fff;
+            font-size: $fz_subtitle;
+        }
+
+        &__description {
+            color: #fff;
+            font-size: $fz_text;
+            line-height: 20px;
+        }
+
+        &__price {
+            color: $color_dop;
+            font-size: $fz_dop;
+            font-weight: 700;
+        }
+}
+
+/* Блок Примеры работ */
 .examples {
     margin: 0px 0px 50px 0px;
     padding: 0 0 50px 0;
@@ -628,6 +751,7 @@ $bgc_1: rgb(184, 184, 184);
 		&__pagination {
             bottom: -40px;
             left: calc(50% - 40px);
+            z-index: 2;
 		}
 
 		&__button-prev {
@@ -653,10 +777,122 @@ $bgc_1: rgb(184, 184, 184);
         }
 }
 
+.faq {
+    margin: 0px 0px 50px 0px;
 
+        &__container {
+        }
+
+        &__title {
+        }
+
+        &__body {
+        }
+
+        &__item {
+            margin: 0px 0px 15px 0px;
+        }
+
+        &__question {
+            cursor: pointer;
+            font-size: $fz_subtitle;
+            line-height: 26px;
+            background-color: $bgc_gray;
+            border-radius: 10px;
+            padding: 10px 40px 10px 15px;
+            margin: 0px 0px 10px 0px;
+            position: relative;
+
+                &::before, &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    width: 15px;
+                    height: 3px;
+                    background-color: rgb(199, 199, 199);
+                    transition: 300ms;
+                }
+                &::before {
+                    transform: rotate(45deg);
+                    right: 19px;
+                }
+                &::after {
+                    transform: rotate(-45deg);
+                    right: 10px;
+                }
+                &.active::before {
+                    transform: rotate(-45deg);
+                }
+                &.active::after {
+                    transform: rotate(45deg);
+                }
+        }
+
+        &__answer {
+            display: none;
+            font-size: $fz_text;
+            line-height: 20px;
+            padding: 0 15px;
+        }
+}
 
 /* Футер */
 .footer {
+    padding: 20px 0 0 0;
+    background-color: $bgc_footer;
+
+        &__container {
+        }
+
+        &__row {
+            display: flex;
+        }
+
+        &__column {
+            flex: 0 1 50%;
+        }
+
+        &__feedback {
+        }
+
+        &__contacts {
+            height: 100%;
+            padding: 0 0 0 70px;
+        }
+
+        &__body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        &__col {
+            margin: 0px 0px 20px 0px;
+        }
+
+        &__title {
+            font-size: $fz_title;
+            color: #fff;
+        }
+
+        &__phone {
+        }
+
+        &__subtitle {
+            font-size: $fz_subtitle;
+            color: #fff;
+            margin: 0px 0px 10px 0px;
+        }
+
+        &__contact {
+            font-size: $fz_subtitle;
+            color: $color_text;
+        }
+
+        &__email {
+        }
 }
 
 /* Адаптив */

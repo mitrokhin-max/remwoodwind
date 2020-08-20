@@ -26,7 +26,7 @@
             padding: 30px 50px;
     }
 
-    .slide-kind{
+    .slide-kind {
         width: 40%;
     }
 
@@ -43,6 +43,10 @@
         &__slide {
             width: 27%;
         }
+    }
+
+    .slide-repair {
+        width: 40%;
     }
 }
 
@@ -202,6 +206,13 @@
         }
     }
 
+    .title {
+        &:after {
+            left: 45%;
+            width: 10%;
+        }
+    }
+
     .advantages {
         &__column {
             flex: 0 1 50%;
@@ -259,6 +270,28 @@
             width: 40%;
         }
     }
+
+    .repair {
+            &__slider {
+                height: 400px;
+            }
+    }
+
+    .slide-repair {
+        width: 42%;
+            &__row {
+                margin: 180px 0px 0 0px;
+                padding: 0 20px 0 20px;
+            }
+
+            &__title  {
+                font-size: $fz_subtitle_992;
+            }
+
+            &__description, &__price {
+                font-size: $fz_text_992;
+            }
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -315,6 +348,13 @@
     .feedback {
         padding: 30px 50px;
     }
+
+    .title {
+        &:after {
+            left: 44%;
+            width: 12%;
+        }
+    }
     
     .kinds {
         &__slider {
@@ -336,6 +376,52 @@
 
         &__slide {
             width: 47%;
+        }
+    }
+
+    .repair {
+        &__slider {
+            height: 370px;
+        }
+    }
+
+    .slide-repair {
+        width: 55%;
+            &__row {
+                margin: 150px 0px 0 0px;
+            }
+    }
+
+    .faq {
+        &__question {
+            font-size: 22px;
+        }
+    }
+
+    .footer {
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__column {
+            flex: 0 1 100%;
+            &_1 {
+                order: 1;
+            }
+            &_2 {
+                order: 0;
+            }
+        }
+
+        &__body {
+            align-items: center;
+        }
+
+        &__contacts {
+            padding: 0;
+        }
+
+        &__title {
+            text-align: center;
         }
     }
 }
@@ -417,6 +503,13 @@
         }
     }
 
+    .title {
+        &:after {
+            left: 43%;
+            width: 14%;
+        }
+    }
+
     .advantages {
         &__column {
             flex: 0 1 100%;
@@ -471,6 +564,25 @@
 
         &__slide {
             width: 72%;
+        }
+    }
+
+    .repair {
+        &__slider {
+            height: 370px;
+        }
+    }
+
+    .slide-repair {
+        width: 80%;
+            &__row {
+                margin: 130px 0px 0 0px;
+            }
+    }
+
+    .faq {
+        &__question {
+            font-size: 18px;
         }
     }
 }

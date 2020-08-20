@@ -10,8 +10,18 @@ $(document).ready(function() {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+
+    /* Аккордеон */
+    $('.faq__question').click(function(event) {
+        if ($('.faq__body').hasClass('akkordeon')) {
+            $('.faq__question').not($(this)).removeClass('active');
+            $('.faq__answer').not($(this).next()).slideUp(300);
+        }
+        $(this).toggleClass('active').next().slideToggle(300);
+    });
 });
 
+/* слайдер Цены на москитные сетки */
 var kinds = new Swiper('.kinds__slider', {
     slidesPerView: 'auto',
     freeMode: true,
@@ -27,6 +37,7 @@ var kinds = new Swiper('.kinds__slider', {
     }
 });
 
+/* слайдер Примеры работ */
 var examples = new Swiper('.examples__slider', {
     slidesPerView: 'auto',
     centeredSlides: true,
@@ -49,5 +60,21 @@ var examples = new Swiper('.examples__slider', {
     },
 });
 
+/* слайдер Цены на ремонт */
+var kinds = new Swiper('.repair__slider', {
+    slidesPerView: 'auto',
+    freeMode: true,
+    spaceBetween: 20,
+    grabCursor: true,
+    breakpoints: {
+        768: {
+            spaceBetween: 30
+        },
+        992: {
+            spaceBetween: 40
+        }
+    }
+});
 
+/* Активация АОС */
 AOS.init();
