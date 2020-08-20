@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 /* Подключение шрифтов */
@@ -893,6 +894,34 @@ body, html {
 .footer__contact {
   font-size: 24px;
   color: #81858e;
+}
+
+.privacy {
+  padding: 20px 0;
+}
+
+.privacy__logo {
+  width: 150px;
+  margin: 0 auto 30px auto;
+}
+
+.privacy__logo img {
+  max-width: 100%;
+}
+
+.privacy__title {
+  font-size: 30px;
+  margin: 0px 0px 20px 0px;
+}
+
+.privacy__text p {
+  font-size: 16px;
+  color: #81858e;
+}
+
+.privacy__subtitle {
+  font-size: 24px;
+  margin: 20px 0px 10px 0px;
 }
 
 /* Адаптив */
