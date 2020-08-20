@@ -409,19 +409,16 @@
             }
             &_2 {
                 order: 0;
+                padding: 0 50px;
             }
         }
 
         &__body {
-            align-items: center;
+            align-items: flex-start;
         }
 
         &__contacts {
             padding: 0;
-        }
-
-        &__title {
-            text-align: center;
         }
     }
 }
@@ -501,6 +498,10 @@
         &__feedback {
             padding: 20px 25px;
         }
+    }
+
+    .feedback {
+        padding: 30px 25px;
     }
 
     .title {
@@ -583,6 +584,14 @@
     .faq {
         &__question {
             font-size: 18px;
+        }
+    }
+
+    .footer {
+        &__column {
+            &_2 {
+                padding: 0 25px;
+            }
         }
     }
 }

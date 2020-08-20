@@ -839,7 +839,7 @@ $bgc_footer: #262026;
 
 /* Футер */
 .footer {
-    padding: 20px 0 0 0;
+    padding: 20px 0 20px 0;
     background-color: $bgc_footer;
 
         &__container {
@@ -894,6 +894,19 @@ $bgc_footer: #262026;
 
         &__email {
         }
+
+        &__year {
+            text-align: center;
+            font-size: 16px;
+            margin: 0px 0px 5px 0px;
+            color: $color_text;
+        }
+
+        &__rights {
+            text-align: center;
+            font-size: 16px;
+            color: $color_text;
+        }
 }
 
 .privacy {
@@ -904,7 +917,7 @@ $bgc_footer: #262026;
 
     &__logo {
         width: 150px;
-        margin: 0 auto 30px auto;
+        margin: 0 auto 20px auto;
         img {
             max-width: 100%;
         }
@@ -919,6 +932,8 @@ $bgc_footer: #262026;
         p {
             font-size: 16px;
             color: $color_text;
+            margin: 0 0 5px 0;
+            padding: 0 0 0 30px;
         }
     }
 

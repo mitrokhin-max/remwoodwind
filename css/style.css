@@ -851,7 +851,7 @@ body, html {
 
 /* Футер */
 .footer {
-  padding: 20px 0 0 0;
+  padding: 20px 0 20px 0;
   background-color: #262026;
 }
 
@@ -896,13 +896,26 @@ body, html {
   color: #81858e;
 }
 
+.footer__year {
+  text-align: center;
+  font-size: 16px;
+  margin: 0px 0px 5px 0px;
+  color: #81858e;
+}
+
+.footer__rights {
+  text-align: center;
+  font-size: 16px;
+  color: #81858e;
+}
+
 .privacy {
   padding: 20px 0;
 }
 
 .privacy__logo {
   width: 150px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
 }
 
 .privacy__logo img {
@@ -917,6 +930,8 @@ body, html {
 .privacy__text p {
   font-size: 16px;
   color: #81858e;
+  margin: 0 0 5px 0;
+  padding: 0 0 0 30px;
 }
 
 .privacy__subtitle {
@@ -1218,15 +1233,13 @@ body, html {
   }
   .footer__column_2 {
     order: 0;
+    padding: 0 50px;
   }
   .footer__body {
-    align-items: center;
+    align-items: flex-start;
   }
   .footer__contacts {
     padding: 0;
-  }
-  .footer__title {
-    text-align: center;
   }
 }
 
@@ -1277,6 +1290,9 @@ body, html {
   }
   .aboutus__feedback {
     padding: 20px 25px;
+  }
+  .feedback {
+    padding: 30px 25px;
   }
   .title:after {
     left: 43%;
@@ -1329,5 +1345,8 @@ body, html {
   }
   .faq__question {
     font-size: 18px;
+  }
+  .footer__column_2 {
+    padding: 0 25px;
   }
 }
