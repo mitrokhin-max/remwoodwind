@@ -923,7 +923,6 @@ $bgc_footer: #262026;
     &__title {
         font-size: $fz_title;
         margin: 0px 0px 20px 0px;
-        text-align: center;
     }
 
     &__text {
@@ -943,8 +942,8 @@ $bgc_footer: #262026;
 
 /* Страница успешной отправки заявки */
 .success {
-    overflow-x: hidden;
-    padding: 20px 0;
+    overflow: hidden;
+    padding: 20px 0 0 0;
 		&__container {
         }
         
@@ -957,7 +956,7 @@ $bgc_footer: #262026;
         }
 
 		&__row {
-            height: calc(100vh - 170px);
+            height: 75vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1006,7 +1005,6 @@ $bgc_footer: #262026;
             text-align: center;
 		}
 }
-
 
 /* Адаптив */
 @import 'media';

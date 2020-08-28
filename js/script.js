@@ -19,6 +19,10 @@ $(document).ready(function() {
         }
         $(this).toggleClass('active').next().slideToggle(300);
     });
+
+    /* Маска для телефона */
+    $("#phone_1").mask("+7(999) 999-99-99");
+    $("#phone_2").mask("+7(999) 999-99-99");
 });
 
 /* слайдер Цены на москитные сетки */
