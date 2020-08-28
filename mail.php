@@ -1,5 +1,4 @@
 <?php 
-
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
@@ -7,7 +6,6 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
-
 
 $mail->isSMTP();
 $mail->Host = 'smtp.mail.ru';
@@ -28,6 +26,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: index.html');
+    header('location: success.html');
 }
 ?>
