@@ -1,9 +1,11 @@
 $(document).ready(function() {
+    /* Меню бургер */
     $('.header__burger').click(function(event){
         $('.header__burger,.header__menu').toggleClass('active');
         $('body').toggleClass('lock');
     })
     
+    /* Скролл к блоку */
     $("#header__list").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
@@ -21,8 +23,8 @@ $(document).ready(function() {
     });
 
     /* Маска для телефона */
-    $("#phone_1").mask("+7(999) 999-99-99");
-    $("#phone_2").mask("+7(999) 999-99-99");
+    $("#phone_1").mask("+7 (999) 999-99-99");
+    $("#phone_2").mask("+7 (999) 999-99-99");
 });
 
 /* слайдер Цены на москитные сетки */

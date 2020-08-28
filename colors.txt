@@ -1,0 +1,13 @@
+$color_main: #2f78ff;
+$color_second: rgb(33, 16, 190);
+$color_title: #000;
+$color_text: #81858e;
+$color_dop: rgb(255, 217, 45);
+$fz_title: 30px;
+$fz_subtitle: 24px;
+$fz_text: 18px;
+$fz_dop: 16px;
+$bgc_1: rgb(184, 184, 184);
+$bgc_lightgray: #FCFCFC;
+$bgc_gray: rgb(250, 250, 250);
+$bgc_footer: #262026;
