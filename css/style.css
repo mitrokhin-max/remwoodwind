@@ -1416,14 +1416,14 @@ body, html {
     width: 72%;
   }
   .repair__slider {
-    height: 370px;
+    height: 380px;
   }
   .slide-repair {
-    width: 80%;
+    width: 85%;
   }
   .slide-repair__row {
     margin: 20px 0px 0 0px;
-    height: 370px;
+    height: 380px;
     justify-content: center;
   }
   .faq__question {

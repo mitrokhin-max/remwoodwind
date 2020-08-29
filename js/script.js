@@ -73,9 +73,12 @@ var examples = new Swiper('.examples__slider', {
 var kinds = new Swiper('.repair__slider', {
     slidesPerView: 'auto',
     freeMode: true,
-    spaceBetween: 20,
+    spaceBetween: 15,
     grabCursor: true,
     breakpoints: {
+        576: {
+            spaceBetween: 20
+        },
         768: {
             spaceBetween: 30
         },
