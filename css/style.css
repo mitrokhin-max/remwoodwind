@@ -520,7 +520,7 @@ body, html {
   left: calc(50% - 5px - 3em);
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 10px 15px;
+  padding: 5px 15px 10px 15px;
 }
 
 .slide-kind__row {
@@ -1192,7 +1192,9 @@ body, html {
     width: 42%;
   }
   .slide-kind__row {
-    margin: 100px 0px 0 0px;
+    height: 400px;
+    justify-content: center;
+    margin: 0px 0px 0 0px;
     padding: 0 15px 0 15px;
   }
   .slide-kind__title {
@@ -1279,8 +1281,8 @@ body, html {
     width: 55%;
   }
   .slide-kind__row {
-    margin: 70px 0px 0 0px;
-    padding: 0 10px 0 10px;
+    height: 370px;
+    padding: 0 10px;
   }
   .examples__slider {
     height: 400px;
@@ -1381,14 +1383,14 @@ body, html {
     margin: 0px 20px 20px 20px;
   }
   .kinds__slider {
-    height: 390px;
+    height: 380px;
   }
   .slide-kind {
     width: 85%;
   }
   .slide-kind__row {
-    padding: 0 10px 0 10px;
-    margin: 50px 0px 0 0px;
+    height: 380px;
+    padding: 20px 10px 0 10px;
   }
   .pattern__column {
     flex: 0 1 50%;
