@@ -31,7 +31,7 @@ $(document).ready(function() {
 var kinds = new Swiper('.kinds__slider', {
     slidesPerView: 'auto',
     freeMode: true,
-    spaceBetween: 20,
+    spaceBetween: 15,
     grabCursor: true,
     breakpoints: {
         768: {

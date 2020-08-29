@@ -234,8 +234,8 @@
     .slide-kind {
         width: 42%;
             &__row {
-                margin: 180px 0px 0 0px;
-                padding: 0 20px 0 20px;
+                margin: 90px 0px 0 0px;
+                padding: 0 15px 0 15px;
             }
 
             &__title  {
@@ -362,7 +362,8 @@
     .slide-kind {
         width: 55%;
             &__row {
-                margin: 150px 0px 0 0px;
+                margin: 60px 0px 0 0px;
+                padding: 0 10px 0 10px;
             }
     }
 
@@ -514,14 +515,15 @@
 
     .kinds {
         &__slider {
-            height: 370px;
+            height: 390px;
         }
     }
 
     .slide-kind {
-        width: 80%;
+        width: 85%;
             &__row {
-                margin: 130px 0px 0 0px;
+                padding: 0 10px 0 10px;
+                margin: 50px 0px 0 0px;
             }
     }
 
