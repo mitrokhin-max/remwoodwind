@@ -30,6 +30,7 @@ $bgc_1: rgba(201, 201, 201, 0.7);
 $bgc_lightgray: #FCFCFC;
 $bgc_gray: #E8EEEF;
 $bgc_footer: #082B4C;
+$color_text_btn: #062A4D;
 
 /* Шапка */
 .header {
@@ -291,7 +292,7 @@ $bgc_footer: #082B4C;
             padding: 10px;
             border-radius: 10px;
             background-color: $color_second;
-            color: #fff;
+            color: $color_text_btn;
             font-size: $fz_text;
             box-shadow: 0px 3px 0px #94a146;
             transition: 300ms;
