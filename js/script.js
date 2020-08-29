@@ -34,6 +34,9 @@ var kinds = new Swiper('.kinds__slider', {
     spaceBetween: 15,
     grabCursor: true,
     breakpoints: {
+        576: {
+            spaceBetween: 20
+        },
         768: {
             spaceBetween: 30
         },

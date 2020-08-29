@@ -526,7 +526,7 @@ body, html {
 .slide-kind__row {
   position: relative;
   z-index: 2;
-  margin: 200px 0px 0 0px;
+  margin: 230px 0px 0 0px;
   padding: 0 15px 0 15px;
   display: flex;
   flex-direction: column;
@@ -1192,7 +1192,7 @@ body, html {
     width: 42%;
   }
   .slide-kind__row {
-    margin: 90px 0px 0 0px;
+    margin: 100px 0px 0 0px;
     padding: 0 15px 0 15px;
   }
   .slide-kind__title {
@@ -1279,7 +1279,7 @@ body, html {
     width: 55%;
   }
   .slide-kind__row {
-    margin: 60px 0px 0 0px;
+    margin: 70px 0px 0 0px;
     padding: 0 10px 0 10px;
   }
   .examples__slider {
