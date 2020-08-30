@@ -780,7 +780,7 @@ body, html {
 
 .examples__pagination {
   bottom: -40px;
-  left: calc(50% - 40px);
+  left: calc(50% - 56px);
   z-index: 2;
 }
 
