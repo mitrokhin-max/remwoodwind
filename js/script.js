@@ -54,6 +54,7 @@ var examples = new Swiper('.examples__slider', {
     // loopedSlides: 5,
     spaceBetween: 20,
     slideToClickedSlide: true,
+    speed: 1000,
     autoplay: {
         delay: 5000,
     },
