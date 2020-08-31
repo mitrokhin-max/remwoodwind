@@ -410,6 +410,7 @@ $color_text_btn: #062A4D;
         &__slider {
             width: 100%;
             height: 500px;
+            padding: 7px 0;
         }
 
         &__wrapper {
@@ -464,7 +465,7 @@ $color_text_btn: #062A4D;
     }
 
     &_hit {
-        border: 7px solid $color_dop;
+        outline: 7px solid $color_dop;
         position: relative;
         &::before {
             content: 'Хит продаж';
@@ -620,6 +621,7 @@ $color_text_btn: #062A4D;
         &__slider {
             width: 100%;
             height: 500px;
+            padding: 7px 0;
         }
 
         &__wrapper {
@@ -671,7 +673,7 @@ $color_text_btn: #062A4D;
     }
 
     &_hit {
-        border: 7px solid $color_dop;
+        outline: 7px solid $color_dop;
         position: relative;
         &::before {
             content: 'Хит продаж';

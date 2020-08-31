@@ -448,6 +448,7 @@ body, html {
 .kinds__slider {
   width: 100%;
   height: 500px;
+  padding: 7px 0;
 }
 
 .kinds__slide_1 {
@@ -503,7 +504,7 @@ body, html {
 }
 
 .slide-kind_hit {
-  border: 7px solid #D7EB67;
+  outline: 7px solid #D7EB67;
   position: relative;
 }
 
@@ -643,6 +644,7 @@ body, html {
 .repair__slider {
   width: 100%;
   height: 500px;
+  padding: 7px 0;
 }
 
 .repair__slide_1 {
@@ -694,7 +696,7 @@ body, html {
 }
 
 .slide-repair_hit {
-  border: 7px solid #D7EB67;
+  outline: 7px solid #D7EB67;
   position: relative;
 }
 
@@ -1386,7 +1388,7 @@ body, html {
     height: 380px;
   }
   .slide-kind {
-    width: 85%;
+    width: 80%;
   }
   .slide-kind__row {
     height: 380px;
@@ -1419,7 +1421,7 @@ body, html {
     height: 380px;
   }
   .slide-repair {
-    width: 85%;
+    width: 80%;
   }
   .slide-repair__row {
     margin: 20px 0px 0 0px;
