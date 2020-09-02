@@ -885,8 +885,9 @@ $color_text_btn: #062A4D;
         }
 
         &__title {
-            font-size: $fz_title;
+            font-size: $fz_subtitle;
             color: #fff;
+            margin: 0px 0px 10px 0px;
         }
 
         &__phone {
