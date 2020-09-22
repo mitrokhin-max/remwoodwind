@@ -264,6 +264,7 @@ body, html {
 
 .aboutus__row {
   display: flex;
+  align-items: center;
 }
 
 .aboutus__column_1 {
@@ -281,7 +282,7 @@ body, html {
 
 .aboutus__title {
   font-size: 34px;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .aboutus__subtitle {
@@ -291,6 +292,7 @@ body, html {
 
 .aboutus__description {
   font-size: 18px;
+  line-height: 20px;
   margin: 0px 0px 10px 0px;
 }
 
