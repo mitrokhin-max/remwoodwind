@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: 
+Disallow: /privacy.html
 Host: https://remwoodwind.ru/
 Sitemap: https://remwoodwind.ru/sitemap.xml
