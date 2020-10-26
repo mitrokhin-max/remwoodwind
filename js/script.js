@@ -10,7 +10,7 @@ $(document).ready(function() {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 700);
+        $('body,html').animate({scrollTop: top - 80}, 700);
     });
 
     /* Аккордеон */
@@ -33,6 +33,7 @@ var kinds = new Swiper('.kinds__slider', {
     freeMode: true,
     spaceBetween: 15,
     grabCursor: true,
+    disableOnInteraction: false,
     breakpoints: {
         576: {
             spaceBetween: 20

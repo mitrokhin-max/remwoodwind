@@ -19,9 +19,13 @@ $mail->setFrom('robot@remwoodwind.ru'); // От кого будет уходит
 $mail->addAddress('moskitnet@mail.ru');     // Кому будет уходить письмо
 $mail->isHTML(true);
 
+$body = '<h2>Заявка на обратную связь</h2>';
+$body.= '<p><b>Имя: </b>'.$name.'</p>';
+$body.= '<p><b>Телефон: </b>'.$phone.'</p>';
+$body.= '<p><b>Эл. почта: </b>'.$email.'</p>';
+
 $mail->Subject = 'Заявка с сайта';
-$mail->Body    = 'Имя: '.$name. '<br>Номер телефона: '.$phone. '<br>Эл. почта: '.$email;
-$mail->AltBody = '';
+$mail->Body    = $body;
 
 if(!$mail->send()) {
     echo 'Error';
