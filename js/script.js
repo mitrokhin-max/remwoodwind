@@ -33,7 +33,6 @@ var kinds = new Swiper('.kinds__slider', {
     freeMode: true,
     spaceBetween: 15,
     grabCursor: true,
-    disableOnInteraction: false,
     breakpoints: {
         576: {
             spaceBetween: 20
@@ -58,8 +57,9 @@ var examples = new Swiper('.examples__slider', {
     speed: 800,
     autoplay: {
         delay: 5000,
+        disableOnInteraction: false,
     },
-
+    
     pagination: {
         el: '.examples__pagination',
         clickable: true,

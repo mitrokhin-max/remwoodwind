@@ -11,7 +11,7 @@ $mail->isSMTP();
 $mail->Host = 'mail.hosting.reg.ru';
 $mail->SMTPAuth = true;
 $mail->Username = 'robot@remwoodwind.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'qwerty123'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Password = 'H1u8K7v9'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
